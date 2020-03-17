@@ -11,7 +11,7 @@ package:
   artifact: target/cities-suggestion-dev.jar
 
 functions:
-  hello:
+  cities-suggestion:
     handler: com.cyranno.citiessuggestion.Handler
     events:
     - http:
