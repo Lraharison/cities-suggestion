@@ -1,0 +1,25 @@
+service: cities-suggestion
+
+provider:
+  name: aws
+  runtime: java8
+  region: ca-central-1
+  timeout: 60
+  memorySize: 512
+
+package:
+  artifact: target/cities-suggestion-dev.jar
+
+functions:
+  hello:
+    handler: com.cyranno.citiessuggestion.Handler
+    events:
+    - http:
+        path: /suggestions
+        method: get
+        request:
+          parameters:
+            querystrings:
+              q: true
+              latitude: true
+              longitude: true
