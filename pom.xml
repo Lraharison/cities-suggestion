@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aws-java-sdk.version>1.11.718</aws-java-sdk.version>
         <aws-lambda-java-core.version>1.2.0</aws-lambda-java-core.version>
-        <jackson.version>2.9.10</jackson.version>
+        <jackson.version>2.10.3</jackson.version>
         <logback.version>1.1.7</logback.version>
         <lombok.version>1.18.12</lombok.version>
         <junit.version>4.13</junit.version>
